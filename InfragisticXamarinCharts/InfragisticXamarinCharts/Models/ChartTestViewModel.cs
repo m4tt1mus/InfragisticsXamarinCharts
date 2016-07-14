@@ -13,7 +13,7 @@
         }
 
         #endregion
-        public EnergyProductionData Data { get; set; }
+        public EnergyProductionDataSample Data { get; set; }
 
         public ChartTestViewModel()
         {

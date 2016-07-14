@@ -6,11 +6,11 @@
   xmlns:models="clr-namespace:InfragisticXamarinCharts.Models;assembly=InfragisticXamarinCharts"
   x:Class="InfragisticXamarinCharts.Pages.LineChart">
   <ContentPage.Resources>
-    <!--<Grid>
+    <Grid>
       <Grid.Resources>
-        <models:ChartTestViewModel x:Name="Data"/>
+        <models:EnergyProductionDataSample x:Name="Data"/>
       </Grid.Resources>
-    </Grid>-->
+    </Grid>
   </ContentPage.Resources>
   <ContentPage.Content>
     <Grid>
@@ -24,11 +24,11 @@
       <Label Text="test" Grid.Row="0" Grid.Column="0"></Label>
       <controls:XFDataChart x:Name="Chart" Grid.Row="1" Grid.Column="0">
         <controls:XFDataChart.Axes>
-          <controls:CategoryXAxis x:Name="xAxis" ItemsSource="{Binding Data}" Label="Country" />
+          <controls:CategoryXAxis x:Name="xAxis" ItemsSource="{StaticResource Data}" Label="Country" />
           <controls:NumericYAxis  x:Name="yAxis" />
         </controls:XFDataChart.Axes>
         <controls:XFDataChart.Series>
-          <controls:AreaSeries ItemsSource="{Binding Data}"
+          <controls:AreaSeries ItemsSource="{StaticResource Data}"
                         ValueMemberPath="Coal"
                         XAxis="{x:Reference xAxis}"
                         YAxis="{x:Reference yAxis}">
