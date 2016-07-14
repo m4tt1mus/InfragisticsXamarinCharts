@@ -7,12 +7,14 @@ using Xamarin.Forms;
 
 namespace InfragisticXamarinCharts
 {
+    using Pages;
+
     public class App : Application
     {
         public App()
         {
             // The root page of your application
-            var content = new ContentPage
+            var content = new LineChart()
             {
                 Title = "InfragisticXamarinCharts",
             };
