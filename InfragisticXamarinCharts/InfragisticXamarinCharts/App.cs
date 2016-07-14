@@ -14,9 +14,9 @@ namespace InfragisticXamarinCharts
         public App()
         {
             // The root page of your application
-            var content = new LineChartInCode()
+            var content = new LineChart()
             {
-                Title = "InfragisticXamarinCharts",
+                Title = "InfragisticXamarinCharts"
             };
 
             MainPage = new NavigationPage(content);

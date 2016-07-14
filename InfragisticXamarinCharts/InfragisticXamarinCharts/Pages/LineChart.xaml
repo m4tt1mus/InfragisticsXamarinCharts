@@ -2,8 +2,39 @@
 <ContentPage
   xmlns="http://xamarin.com/schemas/2014/forms"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:controls="clr-namespace:Infragistics.XF.Controls;assembly=InfragisticsXF.Controls.Charts"
+  xmlns:models="clr-namespace:InfragisticXamarinCharts.Models;assembly=InfragisticXamarinCharts"
   x:Class="InfragisticXamarinCharts.Pages.LineChart">
+  <ContentPage.Resources>
+    <!--<Grid>
+      <Grid.Resources>
+        <models:ChartTestViewModel x:Name="Data"/>
+      </Grid.Resources>
+    </Grid>-->
+  </ContentPage.Resources>
   <ContentPage.Content>
-    <Label Text="test"></Label>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"></RowDefinition>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Label Text="test" Grid.Row="0" Grid.Column="0"></Label>
+      <controls:XFDataChart x:Name="Chart" Grid.Row="1" Grid.Column="0">
+        <controls:XFDataChart.Axes>
+          <controls:CategoryXAxis x:Name="xAxis" ItemsSource="{Binding Data}" Label="Country" />
+          <controls:NumericYAxis  x:Name="yAxis" />
+        </controls:XFDataChart.Axes>
+        <controls:XFDataChart.Series>
+          <controls:AreaSeries ItemsSource="{Binding Data}"
+                        ValueMemberPath="Coal"
+                        XAxis="{x:Reference xAxis}"
+                        YAxis="{x:Reference yAxis}">
+          </controls:AreaSeries>
+        </controls:XFDataChart.Series>
+      </controls:XFDataChart>
+    </Grid>
   </ContentPage.Content>
 </ContentPage>
