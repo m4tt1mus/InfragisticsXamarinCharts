@@ -36,8 +36,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Models\ChartTestViewModel.cs" />
+    <Compile Include="Models\EnergyProduction.cs" />
+    <Compile Include="Models\EnergyProductionData.cs" />
+    <Compile Include="Models\EnergyProductionDataHistory.cs" />
+    <Compile Include="Models\EnergyProductionDataSample.cs" />
     <Compile Include="Pages\LineChart.xaml.cs">
       <DependentUpon>LineChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LineChartInCode.xaml.cs">
+      <DependentUpon>LineChartInCode.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LineChartInListView.xaml.cs">
       <DependentUpon>LineChartInListView.xaml</DependentUpon>
@@ -59,6 +67,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="InfragisticsXF">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\Infragistics.Xamarin\InfragisticsXF.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Barcodes">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Charts">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Gauges">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.0.107\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
@@ -71,6 +91,12 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.0.107\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
       <Private>True</Private>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\LineChartInCode.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
