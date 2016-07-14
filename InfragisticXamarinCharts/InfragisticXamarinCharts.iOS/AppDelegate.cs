@@ -23,6 +23,10 @@ namespace InfragisticXamarinCharts.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Infragistics.XF.Initializers.Barcodes.Init();
+            Infragistics.XF.Initializers.Charts.Init();
+            Infragistics.XF.Initializers.Gauges.Init();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

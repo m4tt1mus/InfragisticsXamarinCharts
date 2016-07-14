@@ -116,6 +116,36 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="IG.Unified">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\IG.Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="IGChart.Unified">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\IGChart.Unified.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Barcodes">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Barcodes.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Charts">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Charts.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Gauges">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Gauges.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.iOS">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.iOS.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />

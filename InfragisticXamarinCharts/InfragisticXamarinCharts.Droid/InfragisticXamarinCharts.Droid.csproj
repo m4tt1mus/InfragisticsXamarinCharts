@@ -52,6 +52,18 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.0.0.6482\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="InfragisticsXF">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Barcodes">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Charts">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsXF.Controls.Gauges">
+      <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
