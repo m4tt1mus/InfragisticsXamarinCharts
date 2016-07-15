@@ -9,10 +9,8 @@
 
         public LineChart()
         {
-            _viewModel = new ChartTestViewModel();
-            this.BindingContext = _viewModel;
-
             InitializeComponent();
+            this.BindingContext = new ChartTestViewModel();
         }
     }
 }
