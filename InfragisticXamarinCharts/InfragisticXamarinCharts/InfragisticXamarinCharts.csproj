@@ -37,10 +37,14 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Models\ChartTestViewModel.cs" />
+    <Compile Include="Models\DataPoint.cs" />
     <Compile Include="Models\EnergyProduction.cs" />
     <Compile Include="Models\EnergyProductionData.cs" />
     <Compile Include="Models\EnergyProductionDataHistory.cs" />
     <Compile Include="Models\EnergyProductionDataSample.cs" />
+    <Compile Include="Pages\DataPointPage.xaml.cs">
+      <DependentUpon>DataPointPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LineChart.xaml.cs">
       <DependentUpon>LineChart.xaml</DependentUpon>
     </Compile>
@@ -79,6 +83,13 @@
     <Reference Include="InfragisticsXF.Controls.Gauges">
       <HintPath>..\..\..\..\Program Files (x86)\Infragistics\2016.1\Xamarin Forms\References\InfragisticsXF.Controls.Gauges.dll</HintPath>
     </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\..\packages\reactiveui-core.6.5.0\lib\Xamarin.iOS10\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.0.107\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
@@ -94,6 +105,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\LineChartInCode.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\DataPointPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
