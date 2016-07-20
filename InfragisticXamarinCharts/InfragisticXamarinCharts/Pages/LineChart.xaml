@@ -23,18 +23,18 @@
       <controls:XFDataChart x:Name="Chart" WidthRequest="300" HeightRequest="100" Grid.Row="1" Grid.Column="0">
         <controls:XFDataChart.Axes>
           <!--For the ResourceDictionary way-->
-          <controls:CategoryXAxis x:Name="xAxis" ItemsSource="{StaticResource data}" Label="Country"/>
+          <!--<controls:CategoryXAxis x:Name="xAxis" ItemsSource="{StaticResource data}" Label="Country"/>-->
 
-          <!--<controls:CategoryXAxis x:Name="xAxis" ItemsSource="{Binding Data}" Label="Country"/>-->
+          <controls:CategoryXAxis x:Name="xAxis" ItemsSource="{Binding Data}" Label="Country"/>
 
           <controls:NumericYAxis x:Name="yAxis"/>
         </controls:XFDataChart.Axes>
         <controls:XFDataChart.Series>
           <!--Using ResourceDictionary...-->
-          <controls:AreaSeries ItemsSource="{StaticResource data}" ValueMemberPath="Coal" XAxis="{x:Reference xAxis}"
-                       YAxis="{x:Reference yAxis}"/>
-          <!--<controls:AreaSeries ItemsSource="{Binding Data}" ValueMemberPath="Coal" XAxis="{x:Reference xAxis}"
-                         YAxis="{x:Reference yAxis}"/>-->
+          <!--<controls:AreaSeries ItemsSource="{StaticResource data}" ValueMemberPath="Coal" XAxis="{x:Reference xAxis}"
+                       YAxis="{x:Reference yAxis}"/>-->
+          <controls:AreaSeries ItemsSource="{Binding Data}" ValueMemberPath="Coal" XAxis="{x:Reference xAxis}"
+                         YAxis="{x:Reference yAxis}"/>
         </controls:XFDataChart.Series>
       </controls:XFDataChart>
     </Grid>
