@@ -20,7 +20,7 @@
         <ColumnDefinition Width="Auto" />
       </Grid.ColumnDefinitions>
       <Label Text="test" Grid.Row="0" Grid.Column="0"></Label>
-      <controls:XFDataChart x:Name="Chart" WidthRequest="Auto" HeightRequest="100" Grid.Row="1" Grid.Column="0">
+      <controls:XFDataChart x:Name="Chart" WidthRequest="300" HeightRequest="100" Grid.Row="1" Grid.Column="0">
         <controls:XFDataChart.Axes>
           <!--For the ResourceDictionary way-->
           <!--<ig:CategoryXAxis x:Name="xAxis" ItemsSource="{StaticResource data}" Label="Country"/>-->
